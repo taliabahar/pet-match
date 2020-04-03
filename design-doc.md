@@ -25,25 +25,27 @@ Helps relieve quarantined people of boredness. People are home all day so they h
 1. Detailed List of Components:
    
 2. Sketch of Each Page (Insert a rough sketch of each page listed above)
-Quiz 
-Results 
-More info 
-Resources for new pet owners (static page)
+    - Quiz 
+    - Results 
+      - Basic Info (Name, age, breed, sex, size, zip code)
+      - Picture 
+    - Detailed info + Location on Map (housetrained, purebred, special needs, act_quickly, )
+    - Resources for new pet owners (static page)
 
 3. List of "use cases" (the "operations" users do when they interact. Ex. click button to navigate to new page, if a user wants to access x they must complete action y)
 
 4. Detailed tech stack (APIs, modules, sockets, etc. Now is your time to do the research!):
-https://www.petfinder.com/developers/
-https://www.adoptapet.com/public/apis/pet_list.html
+   - https://www.petfinder.com/developers/
+   - https://www.adoptapet.com/public/apis/pet_list.html
 
 5. Team Member Responsibilities (assign a function, feature, component, or page to each team member based on strengths and interests):
-    - Jennifer
+   - Jennifer
+     - Team Member
+   - Talia
+     - Project Lead
+   - Jigar
+     - Team Member
+   - Nico
+     - Scrum Master
 
-    - Talia
-
-    - Jigar
-
-    - Nico
-
-
-6. Project Timeline (please lay out milestones for each team member for now through the end of the semester, keeping in mind your required workload. 3 hours of outside work a week for 1 unit, 6 hours outside work a week for 2 units):
+1. Project Timeline (please lay out milestones for each team member for now through the end of the semester, keeping in mind your required workload. 3 hours of outside work a week for 1 unit, 6 hours outside work a week for 2 units):
