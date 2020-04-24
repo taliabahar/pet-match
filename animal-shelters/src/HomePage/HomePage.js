@@ -1,12 +1,10 @@
 import HomeTitle from "../HomeTitle/HomeTitle";
 import React from "react";
-import Button from "react-bootstrap/Button";
 import "./HomePage.css";
-//import Quiz from "./Quiz";
-//import Gallery from "../Gallery";
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 
-export default function HomePage({ setData }) {
+export default function HomePage() {
 
 
   return (
@@ -14,14 +12,14 @@ export default function HomePage({ setData }) {
       <HomeTitle/>
 
       <div className="body">
-      <Button variant="danger" >
-          Take Quiz
-      </Button>
-      <br/>
-      <br/>
-      <Button variant="danger" >
-          View Gallery
-      </Button> 
+        <Router>
+          <div>
+            <Link to="/quiz">Take Quiz</Link>
+            <br/>
+            <br/>
+            <Link to="/gallery">View Gallery</Link>
+          </div>
+        </Router>
       </div>
 
     </div>
