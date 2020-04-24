@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import Gallery from "./Gallery";
 import Resources from './components/Resources';
 
 function App() {
