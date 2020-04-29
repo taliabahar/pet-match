@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./HomePage.css";
 import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
@@ -25,15 +26,13 @@ export default function HomePage() {
                 <span>View Gallery</span>
               </Button>
             </Link>
-          </div>
-
           <Switch>
             <Route path="/Gallery" component={Gallery} />
             <Route path="/Quiz" component={Quiz} /> 
           </Switch>
+          </div>
         </Router>
       </div> 
-
     </div>
   );
 }
