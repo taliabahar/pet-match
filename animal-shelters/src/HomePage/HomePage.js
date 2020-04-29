@@ -1,26 +1,38 @@
-import HomeTitle from "../HomeTitle/HomeTitle";
 import React from "react";
 import "./HomePage.css";
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
+import Gallery from '../Gallery';
+import { Button } from 'react-bootstrap';
+import Quiz from '../Quiz';
+
 
 
 export default function HomePage() {
-
-
-  return (
+    return (
     <div>
-      <HomeTitle/>
-
-      <div className="body">
+       <div className="body">
         <Router>
           <div>
-            <Link to="/quiz">Take Quiz</Link>
+            <Link to="/quiz">
+              <Button color="white" className="is-rounded">
+                <span>Take Quiz</span>
+              </Button>
+            </Link>
             <br/>
             <br/>
-            <Link to="/gallery">View Gallery</Link>
+            <Link to="/gallery">
+              <Button color="white" className="is-rounded">
+                <span>View Gallery</span>
+              </Button>
+            </Link>
           </div>
+
+          <Switch>
+            <Route path="/Gallery" component={Gallery} />
+            <Route path="/Quiz" component={Quiz} /> 
+          </Switch>
         </Router>
-      </div>
+      </div> 
 
     </div>
   );

@@ -1,0 +1,10 @@
+#galleryHeader {
+  margin: 40px 20px;
+  /* color: #43f9b9; */
+  color: #31f0d6;
+  font-variant: small-caps;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
