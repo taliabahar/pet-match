@@ -4,7 +4,7 @@ import "./HomePage.css";
 import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import Gallery from '../Gallery';
 import { Button } from 'react-bootstrap';
-import Quiz from '../Quiz';
+//import Quiz from '../Quiz';
 
 
 
