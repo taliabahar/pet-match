@@ -6,11 +6,12 @@ import React from "react";
 export default function HomeTitle() {
   return (
     <div className="title">
-      <Navbar bg="light">
+      {/* <Navbar bg="light">
         <Navbar.Brand id="test" href="/">
           Pet Match
         </Navbar.Brand>
-      </Navbar>
+      </Navbar> */}
+      <h1>hola</h1>
     </div>
   );
 }
