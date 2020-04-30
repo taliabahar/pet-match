@@ -13,8 +13,7 @@ const AnimalMap = (props) => {
     zoom: 16,
   });
 
-  const accessToken =
-    "pk.eyJ1IjoiamlnYXJzd2FtIiwiYSI6ImNrOW1pdDJiZTA3OXMzZHRzYXBhMDZ5b3cifQ.3TL43jnbxJ9p50K62fH1lQ";
+  const accessToken = process.env.REACT_APP_MAPBOX_ACCESS_KEY;
 
   return (
     <div className="animalMap">
