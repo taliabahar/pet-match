@@ -39,7 +39,6 @@ export async function simpleFetch(path, qs = {}) {
     .join("&");
   query = query ? `?${query}` : "";
   console.log(query);
-  // console.log(`${serviceUrl}/${path}${query}`);
   return fetch(`${serviceUrl}/${path}${query}`, config).then((response) => {
     if (response.ok) {
       return response.json();
