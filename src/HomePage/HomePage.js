@@ -25,8 +25,14 @@ export default function HomePage() {
               </Button>
             </Link>
             <Switch>
-              <Route path="/Gallery" component={Gallery} />
-              <Route path="/Quiz" component={Quiz} />
+              <Route path="/gallery">
+                <Gallery />
+              </Route>
+              <Route path="/quiz">
+                <Quiz />
+              </Route>
+              {/* <Route path="/Gallery" component={Gallery} /> */}
+              {/* <Route path="/Quiz" component={Quiz} /> */}
             </Switch>
           </div>
         </Router>
