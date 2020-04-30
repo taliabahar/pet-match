@@ -1,0 +1,42 @@
+#submit {
+  font-family: "Ubuntu", sans-serif;
+  width: 170px;
+  height: 40px;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 3px solid #70b7e5;
+  background: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  color: #70b7e5;
+}
+
+#submit:hover {
+  color: white;
+  background-color: #70b7e5;
+}
+
+p {
+  font-family: "Alata" !important;
+  font-size: 22px;
+  margin-bottom: -0.1px !important;
+}
+
+.quizQ {
+  margin: 30px;
+  /* background-color: blue; */
+}
+label {
+  margin: 10px;
+}
+
+input[type="text"] {
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+}
