@@ -28,7 +28,7 @@ export default function HomePage() {
             </Link>
           <Switch>
             <Route path="/Gallery" component={Gallery} />
-            <Route path="/Quiz" component={Quiz} /> 
+//             <Route path="/Quiz" component={Quiz} /> 
           </Switch>
           </div>
         </Router>
