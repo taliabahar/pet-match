@@ -5,9 +5,9 @@ import React from "react";
 
 export default function HomeTitle() {
   return (
-    <div className="center-navbar">
-      <Navbar bg="danger" expand="lg">
-        <Navbar.Brand href="/" className="navbar-brand-custom">
+    <div className="title">
+      <Navbar bg="light">
+        <Navbar.Brand id="test" href="/">
           Pet Match
         </Navbar.Brand>
       </Navbar>
