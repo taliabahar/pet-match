@@ -17,7 +17,7 @@ export default function AppHeader() {
     <Router>
       {/* <div className="header-navbar"> */}
       <Navbar>
-        <Link to="/home" className="header-logo">
+        <Link to="/" className="header-logo">
           Pet Match <img src={magnifyingGlass}></img>
         </Link>
         <Nav className="header-links">
@@ -28,7 +28,7 @@ export default function AppHeader() {
       {/* </div> */}
       <div>
         <Switch>
-          <Route path="/home">
+          <Route exact path="/">
             <HomeTitle />
           </Route>
           <Route path="/gallery">
