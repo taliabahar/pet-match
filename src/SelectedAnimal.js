@@ -2,6 +2,7 @@ import React from "react";
 import { Card, Image } from "semantic-ui-react";
 import "./Gallery.css";
 import { Grid, Segment } from "semantic-ui-react";
+import AnimalMap from "./Map/Map";
 
 function SelectedAnimal() {
   return (
@@ -56,9 +57,15 @@ function SelectedAnimal() {
               </ul>
             </Segment>
             <Segment
-              style={{ margin: "0 auto", width: "90%", marginTop: "20px" }}
+              style={{
+                margin: "0 auto",
+                width: "90%",
+                marginTop: "20px",
+                height: "300px",
+              }}
             >
-              2
+              <AnimalMap />
+              {/* <p>Contact Info</p> */}
             </Segment>
           </Grid.Column>
         </Grid.Row>

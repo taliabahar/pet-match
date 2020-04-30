@@ -6,8 +6,8 @@ import "./Map.css";
 
 const AnimalMap = (props) => {
   const [viewport, setViewport] = useState({
-    width: "50vw",
-    height: "50vh",
+    width: "400px",
+    height: "400px",
     latitude: 42.430472,
     longitude: -123.334102,
     zoom: 16,

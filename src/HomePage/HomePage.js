@@ -20,13 +20,13 @@ export default function HomePage() {
             </Link>
             <br />
             <br />
-            <Link to="/gallery">
+            {/* <Link to="/gallery">
               <Button id="gallery" color="white" className="is-rounded">
                 <span>View Gallery</span>
               </Button>
-            </Link>
+            </Link> */}
             <Switch>
-              <Route path="/Gallery" component={test} />
+              {/* <Route path="/Gallery" component={Gallery} /> */}
               <Route path="/Quiz" component={Quiz} />
             </Switch>
           </div>
