@@ -1,5 +1,5 @@
 button {
-  color: #fff !important;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   background: #31f0d6;
@@ -31,4 +31,12 @@ span {
 
 #quiz {
   margin-bottom: 47px;
+}
+
+#submit {
+  border-radius: none !important;
+  height: 10px;
+  background-color: white;
+  border: solid 2px #31f0d6;
+  color: #31f0d6;
 }

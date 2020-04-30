@@ -1,28 +1,31 @@
-import React from 'react';
-import './App.css';
-import HomePage from './HomePage/HomePage';
-import HomeTitle from './HomeTitle/HomeTitle';
-import { getToken, simpleFetch } from './api';
+import React from "react";
+import "./App.css";
+import HomePage from "./HomePage/HomePage";
+import HomeTitle from "./HomeTitle/HomeTitle";
+import { getToken, simpleFetch } from "./api";
 //import Resources from './components/Resources';
-//import 'semantic-ui-css/semantic.js'; 
+//import 'semantic-ui-css/semantic.js';
 
 export default function App() {
-  getToken().then(console.log('Got a token'));
+  getToken().then(console.log("Got a token"));
   return (
     <div className="App">
-      <HomeTitle /> 
+      <HomeTitle />
       <HomePage />
 
-          
-
-
       {/* <Resources /> */}
-      <button onClick={getDogs}>Get some dogs</button>
+      {/* <button onClick={getDogs}>Get some dogs</button> */}
     </div>
   );
 }
 
 function getDogs() {
-  //  simpleFetch('animals', { type: 'Rabbit', page: 1 }).then(result => console.log(result));
-  simpleFetch('types', {}).then(result => console.log(result));
+  simpleFetch("animals", {
+    type: "Dog",
+    size: "small",
+    age: "senior",
+    special_needs: "true",
+    page: 1,
+  }).then((result) => console.log(result));
+  // simpleFetch('types', {}).then(result => console.log(result));
 }
