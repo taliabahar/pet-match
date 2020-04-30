@@ -65,7 +65,7 @@ function Quiz() {
           value="baby"
           onChange={(e) => setAge(e.target.value)}
         ></input>
-        <label for="baby">Baby</label>
+        <label htmlFor="baby">Baby</label>
         <input
           type="radio"
           id="young"
@@ -73,7 +73,7 @@ function Quiz() {
           value="young"
           onChange={(e) => setAge(e.target.value)}
         ></input>
-        <label for="large">Young</label>
+        <label htmlFor="large">Young</label>
         <input
           type="radio"
           id="adult"
@@ -81,7 +81,7 @@ function Quiz() {
           value="adult"
           onChange={(e) => setAge(e.target.value)}
         ></input>
-        <label for="adult">Adult</label>
+        <label htmlFor="adult">Adult</label>
         <input
           type="radio"
           id="senior"
@@ -89,7 +89,7 @@ function Quiz() {
           value="senior"
           onChange={(e) => setAge(e.target.value)}
         ></input>
-        <label for="senior">Senior</label>
+        <label htmlFor="senior">Senior</label>
         <p>What size animal are you looking for?</p>
         <input
           type="radio"
@@ -98,7 +98,7 @@ function Quiz() {
           value="small"
           onChange={(e) => setSize(e.target.value)}
         ></input>
-        <label for="small">Small</label>
+        <label htmlFor="small">Small</label>
         <input
           type="radio"
           id="medium"
@@ -106,7 +106,7 @@ function Quiz() {
           value="medium"
           onChange={(e) => setSize(e.target.value)}
         ></input>
-        <label for="medium">Medium</label>
+        <label htmlFor="medium">Medium</label>
         <input
           type="radio"
           id="large"
@@ -114,7 +114,7 @@ function Quiz() {
           value="large"
           onChange={(e) => setSize(e.target.value)}
         ></input>
-        <label for="large">Large</label>
+        <label htmlFor="large">Large</label>
         <input
           type="radio"
           id="xlarge"
@@ -122,7 +122,7 @@ function Quiz() {
           value="xlarge"
           onChange={(e) => setSize(e.target.value)}
         ></input>
-        <label for="xlarge">X-Large</label>
+        <label htmlFor="xlarge">X-Large</label>
 
         <p>Do you have kids?</p>
         <input
@@ -132,7 +132,7 @@ function Quiz() {
           value="true"
           onChange={(e) => setHasKids(e.target.value)}
         ></input>
-        <label for="yes">Yes</label>
+        <label htmlFor="yes">Yes</label>
         <input
           type="radio"
           id="no"
@@ -140,7 +140,7 @@ function Quiz() {
           value="false"
           onChange={(e) => setHasKids(e.target.value)}
         ></input>
-        <label for="no">No</label>
+        <label htmlFor="no">No</label>
 
         <p>Do you have dogs?</p>
         <input
@@ -150,7 +150,7 @@ function Quiz() {
           value="true"
           onChange={(e) => setHasDogs(e.target.value)}
         ></input>
-        <label for="yes">Yes</label>
+        <label htmlFor="yes">Yes</label>
         <input
           type="radio"
           id="no"
@@ -158,7 +158,7 @@ function Quiz() {
           value="false"
           onChange={(e) => setHasDogs(e.target.value)}
         ></input>
-        <label for="no">No</label>
+        <label htmlFor="no">No</label>
 
         <p>Do you have cats?</p>
         <input
@@ -168,7 +168,7 @@ function Quiz() {
           value="true"
           onChange={(e) => setHasCats(e.target.value)}
         ></input>
-        <label for="yes">Yes</label>
+        <label htmlFor="yes">Yes</label>
         <input
           type="radio"
           id="no"
@@ -176,7 +176,7 @@ function Quiz() {
           value="false"
           onChange={(e) => setHasCats(e.target.value)}
         ></input>
-        <label for="no">No</label>
+        <label htmlFor="no">No</label>
 
         {/* <p>Are you an experienced adopter?</p>
         <input
@@ -186,7 +186,7 @@ function Quiz() {
           value="true"
           onChange={(e) => setExperienced(e.target.value)}
         ></input>
-        <label for="yes">Yes</label>
+        <label htmlFor="yes">Yes</label>
         <input
           type="radio"
           id="no"
@@ -194,7 +194,7 @@ function Quiz() {
           value="false"
           onChange={(e) => setExperienced(e.target.value)}
         ></input>
-        <label for="no">No</label> */}
+        <label htmlFor="no">No</label> */}
       </form>
       <button id="submit" onClick={onKeyDownHandler}>
         SUBMIT
