@@ -3,7 +3,6 @@ import "./App.css";
 import HomePage from "./HomePage/HomePage";
 import HomeTitle from "./HomeTitle/HomeTitle";
 import AppHeader from "./AppHeader";
-import AnimalMap from "./Map/Map";
 import { getToken, simpleFetch } from "./api";
 //import Resources from './components/Resources';
 //import 'semantic-ui-css/semantic.js';
@@ -15,7 +14,6 @@ export default function App() {
       {/* <HomeTitle /> */}
       <AppHeader />
       {/* <HomePage /> */}
-      <AnimalMap />
       {/* <Resources /> */}
       {/* <button onClick={getDogs}>Get some dogs</button> */}
     </div>

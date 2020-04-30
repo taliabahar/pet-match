@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { getToken, simpleFetch } from "./api";
+import Gallery from "./Gallery";
+
+// import Gallery -> pass it quizResults in props
 
 function Quiz() {
   // getToken().then(console.log("Got a token"));
@@ -12,6 +15,7 @@ function Quiz() {
   // const [experienced, setExperienced] = useState("");
   const [postcode, setPostcode] = useState("");
   const [error, setError] = useState(null);
+  const [quizResults, setQuizResult] = useState([]);
 
   const onKeyDownHandler = (e) => {
     e.preventDefault();
@@ -31,7 +35,10 @@ function Quiz() {
         // special_needs: experienced,
         status: "adoptable",
         page: 1,
-      }).then((result) => console.log(result));
+      }).then((result) => {
+        setQuizResult(result);
+        console.log(result);
+      });
     } catch (error) {
       setError("Sorry, but something went wrong.");
     }
@@ -51,7 +58,7 @@ function Quiz() {
 
         <p>What is your postal code?</p>
         <input
-          placeholder=""
+          placeholder="Ex.90045"
           type="text"
           onChange={(e) => setPostcode(e.target.value)}
           value={postcode}
@@ -199,6 +206,7 @@ function Quiz() {
       <button id="submit" onClick={onKeyDownHandler}>
         SUBMIT
       </button>
+      <Gallery results={quizResults} />
     </div>
   );
 }
