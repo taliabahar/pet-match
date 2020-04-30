@@ -15,12 +15,18 @@ export default function App() {
       <HomePage />
       <AnimalMap />
       {/* <Resources /> */}
-      <button onClick={getDogs}>Get some dogs</button>
+      {/* <button onClick={getDogs}>Get some dogs</button> */}
     </div>
   );
 }
 
 function getDogs() {
-  //  simpleFetch('animals', { type: 'Rabbit', page: 1 }).then(result => console.log(result));
-  simpleFetch("types", {}).then((result) => console.log(result));
+  simpleFetch("animals", {
+    type: "Dog",
+    size: "small",
+    age: "senior",
+    special_needs: "true",
+    page: 1,
+  }).then((result) => console.log(result));
+  // simpleFetch('types', {}).then(result => console.log(result));
 }

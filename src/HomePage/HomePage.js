@@ -2,6 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import Gallery from "../Gallery";
+import test from "../SelectedAnimal";
 import { Button } from "react-bootstrap";
 import Quiz from "../Quiz";
 import Navbar from "react-bootstrap/Navbar";
@@ -25,7 +26,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <Switch>
-              <Route path="/Gallery" component={Gallery} />
+              <Route path="/Gallery" component={test} />
               <Route path="/Quiz" component={Quiz} />
             </Switch>
           </div>
