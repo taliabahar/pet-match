@@ -1,0 +1,33 @@
+.router {
+  width: 100vw;
+}
+
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 50px;
+  font-family: "Catamaran", sans-serif;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.header-links {
+  max-width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  font-size: 25px;
+  font-family: "Catamaran", sans-serif;
+}
+
+.header-links a {
+  margin: 0px 10px 0px 10px;
+}

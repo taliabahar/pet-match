@@ -1,9 +1,8 @@
 const authUrl = "https://api.petfinder.com/v2/oauth2/token";
 const serviceUrl = "https://api.petfinder.com/v2";
 
-// Ask Marco or Masao about keeping these safe
-const apiKey = "LwGIeP1a6wzNz4Lp3INHoN2Imwo0HLcIP1kbqGfaihYV8eXVDg";
-const secret = "5cUDxU0lmFHC4bMYbp9vfbfVOV6NPreNOi9OnNcW";
+const apiKey = process.env.REACT_APP_API_KEY.replace(/['";]+/g, "");
+const secret = process.env.REACT_APP_SECRET.replace(/['";]+/g, "");
 
 // Okay to cache the token and base URL in memory. Some people like to put it
 // in local storage but that can in theory be compromised if the is an XSS
