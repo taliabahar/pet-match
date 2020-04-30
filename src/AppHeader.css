@@ -31,3 +31,8 @@
 .header-links a {
   margin: 0px 10px 0px 10px;
 }
+
+img {
+  width: 55px;
+  height: 55px;
+}

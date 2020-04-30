@@ -7,6 +7,7 @@ import Gallery from "./Gallery";
 import Quiz from "./Quiz";
 import HomeTitle from "./HomeTitle/HomeTitle";
 // import Link from "react-bootstrap/Nav";
+import magnifyingGlass from "./searcg.png";
 
 import "./AppHeader.css";
 // import resume from "./resume.pdf";
@@ -17,7 +18,7 @@ export default function AppHeader() {
       {/* <div className="header-navbar"> */}
       <Navbar>
         <Link to="/home" className="header-logo">
-          Pet Match
+          Pet Match <img src={magnifyingGlass}></img>
         </Link>
         <Nav className="header-links">
           <Link to="/gallery">Gallery</Link>

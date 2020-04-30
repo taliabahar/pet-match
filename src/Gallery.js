@@ -6,7 +6,7 @@ function Gallery(props) {
   console.log("props: ", props);
   return (
     <div className="outer">
-      <h1 id="galleryHeader">Find the Right Animal for You</h1>
+      {/* <h1 id="galleryHeader">Find the Right Animal for You</h1> */}
       {props &&
         props.results &&
         props.results.animals &&
