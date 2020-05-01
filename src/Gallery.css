@@ -1,3 +1,9 @@
+.outer {
+  width: 70vw;
+  height: auto;
+  margin-top: 5vh;
+}
+
 #galleryHeader {
   margin: 40px 20px;
   /* color: #43f9b9; */
@@ -9,13 +15,7 @@
   margin: 0 auto;
 }
 
-.outer {
-  width: 70vw;
-  height: auto;
-  margin-top: 5vh;
-}
-
 .pet-card {
-  width: 40% !important;
+  width: 70% !important;
   height: auto;
 }

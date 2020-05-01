@@ -7,7 +7,7 @@ import Gallery from "./Gallery";
 import Quiz from "./Quiz";
 import HomeTitle from "./HomeTitle/HomeTitle";
 // import Link from "react-bootstrap/Nav";
-import magnifyingGlass from "./searcg.png";
+import magnifyingGlass from "./search.png";
 
 import "./AppHeader.css";
 // import resume from "./resume.pdf";

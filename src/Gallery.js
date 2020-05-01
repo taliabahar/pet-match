@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Image } from "semantic-ui-react";
+import { Card, Image, GridColumn, CardDescription } from "semantic-ui-react";
 import "./Gallery.css";
 
 function Gallery(props) {
@@ -15,7 +15,7 @@ function Gallery(props) {
             <Card.Group centered itemsPerRow={4}>
               <Card className="pet-card" style={{ margin: "25px 30px" }}>
                 <Image
-                  src={result.primary_photo_cropped.medium}
+                  src={result.primary_photo_cropped.small}
                   wrapped
                   ui={false}
                 />
@@ -33,6 +33,10 @@ function Gallery(props) {
                       {result.contact.address.state}{" "}
                       {result.contact.address.postcode}
                     </Card.Description>
+                    <br />
+                    <CardDescription>
+                      <a href={result.url}>Learn More</a>
+                    </CardDescription>
                   </div>
                 </Card.Content>
               </Card>
