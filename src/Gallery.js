@@ -6,13 +6,12 @@ function Gallery(props) {
   console.log("props: ", props);
   return (
     <div className="outer">
-      {/* <h1 id="galleryHeader">Find the Right Animal for You</h1> */}
+      <Card.Group centered itemsPerCol={4}>
       {props &&
         props.results &&
         props.results.animals &&
         props.results.animals.map((result) => (
           <div className="Gallery">
-            <Card.Group centered itemsPerCol={3}>
               <Card classname="pet-card" style={{ margin: "25px 30px" }}>
                 <Image
                   src={result.primary_photo_cropped.small}
@@ -40,9 +39,9 @@ function Gallery(props) {
                   </div>
                 </Card.Content>
               </Card>
-            </Card.Group>
           </div>
         ))}
+      </Card.Group>
     </div>
   );
 }
