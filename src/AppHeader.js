@@ -14,7 +14,7 @@ export default function AppHeader() {
     <Router>
       <Navbar>
         <Link to="/" className="header-logo">
-          Pet Match <img src={magnifyingGlass}></img>
+          Pet Match <img src={magnifyingGlass} className="header-img"></img>
         </Link>
         <Nav className="header-links">
           {/* <Link to="/gallery">Gallery</Link> */}

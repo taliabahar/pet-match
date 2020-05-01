@@ -7,16 +7,17 @@ function Gallery(props) {
   return (
     <div className="outer">
       <Card.Group centered itemsPerCol={4}>
-      {props &&
-        props.results &&
-        props.results.animals &&
-        props.results.animals.map((result) => (
-          <div className="Gallery">
+        {props &&
+          props.results &&
+          props.results.animals &&
+          props.results.animals.map((result) => (
+            <div className="Gallery">
               <Card classname="pet-card" style={{ margin: "25px 30px" }}>
                 <Image
                   src={result.primary_photo_cropped.small}
                   wrapped
                   ui={false}
+                  className="pet-img"
                 />
                 <Card.Content>
                   <Card.Header>{result.name}</Card.Header>
@@ -39,8 +40,8 @@ function Gallery(props) {
                   </div>
                 </Card.Content>
               </Card>
-          </div>
-        ))}
+            </div>
+          ))}
       </Card.Group>
     </div>
   );
