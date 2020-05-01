@@ -51,9 +51,9 @@ input[type="text"] {
 
 .result-error {
   text-align: center;
-  width: 50vw;
+  width: 40vw;
   height: 10vh;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Catamaran", sans-serif;
   color: #fc5130;
   margin-top: 5vh;

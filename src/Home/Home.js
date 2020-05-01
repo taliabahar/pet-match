@@ -1,4 +1,4 @@
-import "./HomeTitle.css";
+import "./Home.css";
 
 import Navbar from "react-bootstrap/Navbar";
 import React from "react";
@@ -6,7 +6,7 @@ import dog from "../images/dog.png";
 import rabbit from "../images/rabbit.png";
 import bird from "../images/bird.png";
 
-export default function HomeTitle() {
+export default function Home() {
   return (
     <div className="title">
       <h1>Welcome to Pet match!</h1>
