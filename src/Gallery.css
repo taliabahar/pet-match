@@ -8,3 +8,14 @@
 .wrapper {
   margin: 0 auto;
 }
+
+.outer {
+  width: 70vw;
+  height: auto;
+  margin-top: 5vh;
+}
+
+.pet-card {
+  width: 40% !important;
+  height: auto;
+}

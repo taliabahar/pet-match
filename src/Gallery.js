@@ -13,7 +13,7 @@ function Gallery(props) {
         props.results.animals.map((result) => (
           <div className="Gallery">
             <Card.Group centered itemsPerRow={4}>
-              <Card style={{ margin: "25px 30px" }}>
+              <Card className="pet-card" style={{ margin: "25px 30px" }}>
                 <Image
                   src={result.primary_photo_cropped.medium}
                   wrapped
