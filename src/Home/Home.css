@@ -81,3 +81,8 @@ li {
   margin: 0 10%;
   margin-bottom: 5%;
 }
+
+.animalPic {
+  width: 3vw;
+  height: auto;
+}
