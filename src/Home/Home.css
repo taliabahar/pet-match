@@ -55,6 +55,8 @@ h3 {
   text-align: left;
   margin-left: 10%;
   font-style: oblique;
+  margin-top: 10vh;
+  height: auto;
 }
 
 #reasons {
