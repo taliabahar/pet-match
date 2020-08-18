@@ -5,35 +5,31 @@ import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 import Gallery from "./Resources/Resources.js";
 // import { Button } from "react-bootstrap";
 import Quiz from "./Quiz";
-import HomeTitle from "./HomeTitle/HomeTitle";
-// import Link from "react-bootstrap/Nav";
-import magnifyingGlass from "./searcg.png";
+import Home from "./Home/Home";
+import magnifyingGlass from "./images/search.png";
 
 import "./AppHeader.css";
-// import resume from "./resume.pdf";
 
 export default function AppHeader() {
   return (
     <Router>
-      {/* <div className="header-navbar"> */}
       <Navbar>
         <Link to="/" className="header-logo">
-          Pet Match <img src={magnifyingGlass}></img>
+          Pet Match <img src={magnifyingGlass} className="header-img"></img>
         </Link>
         <Nav className="header-links">
           <Link to="/gallery">Resources</Link>
           <Link to="/quiz">Quiz</Link>
         </Nav>
       </Navbar>
-      {/* </div> */}
       <div>
         <Switch>
           <Route exact path="/">
-            <HomeTitle />
+            <Home />
           </Route>
-          <Route path="/gallery">
+          {/* <Route path="/gallery">
             <Gallery />
-          </Route>
+          </Route> */}
           <Route path="/quiz">
             <Quiz />
           </Route>

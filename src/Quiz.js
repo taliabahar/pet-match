@@ -24,25 +24,34 @@ function Quiz() {
   };
 
   async function grabData() {
-    try {
-      simpleFetch("animals", {
-        type: animalType,
-        size: size,
-        age: age,
-        location: postcode,
-        good_with_children: hasKids,
-        good_with_dogs: hasDogs,
-        good_with_cats: hasCats,
-        // special_needs: experienced,
-        status: "adoptable",
-        page: 1,
-      }).then((result) => {
+    simpleFetch("animals", {
+      type: animalType,
+      size: size,
+      age: age,
+      location: postcode,
+      good_with_children: hasKids,
+      good_with_dogs: hasDogs,
+      good_with_cats: hasCats,
+      // special_needs: experienced,
+      status: "adoptable",
+      page: 1,
+    })
+      .then((result) => {
+        if (result.animals.length === 0) {
+          setQuizResult(result);
+          throw "error";
+        }
+        if (result.animals.length !== 0) {
+          setError("");
+        }
         setQuizResult(result);
         console.log(result);
-      });
-    } catch (error) {
-      setError("Sorry, but something went wrong.");
-    }
+      })
+      .catch((error) =>
+        setError(
+          "Sorry, no animals match your given criteria at this time. Please try again!"
+        )
+      );
   }
 
   return (
@@ -194,27 +203,11 @@ function Quiz() {
           ></input>
           <label htmlFor="no">No</label>
         </div>
-        {/* <p>Are you an experienced adopter?</p>
-        <input
-          type="radio"
-          id="yes"
-          name="experienced"
-          value="true"
-          onChange={(e) => setExperienced(e.target.value)}
-        ></input>
-        <label htmlFor="yes">Yes</label>
-        <input
-          type="radio"
-          id="no"
-          name="experienced"
-          value="false"
-          onChange={(e) => setExperienced(e.target.value)}
-        ></input>
-        <label htmlFor="no">No</label> */}
       </form>
       <button id="submit" onClick={onKeyDownHandler}>
         SUBMIT
       </button>
+      {error && <div className="result-error">{error}</div>}
       <Gallery results={quizResults} />
     </div>
   );
