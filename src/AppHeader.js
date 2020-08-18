@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "react-bootstrap/NavBar";
 import Nav from "react-bootstrap/Nav";
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
-import Gallery from "./Gallery";
+import Gallery from "./Resources/Resources.js";
+// import { Button } from "react-bootstrap";
 import Quiz from "./Quiz";
 import Home from "./Home/Home";
 import magnifyingGlass from "./images/search.png";
@@ -17,7 +18,7 @@ export default function AppHeader() {
           Pet Match <img src={magnifyingGlass} className="header-img"></img>
         </Link>
         <Nav className="header-links">
-          {/* <Link to="/gallery">Gallery</Link> */}
+          <Link to="/gallery">Resources</Link>
           <Link to="/quiz">Quiz</Link>
         </Nav>
       </Navbar>
