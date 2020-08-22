@@ -10,7 +10,7 @@ Collaborated on with [Jigar Swaminarayan](https://github.com/JigarSwam), [Nico R
 
 &nbsp;
 
-### Demo
+## Demo
 *Home Page*
 ![PetMatch home Page](https://i.imgur.com/wpZq6zy.png)
 
