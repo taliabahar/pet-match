@@ -7,3 +7,14 @@ React web app that provides users with a quiz to help them find adoptable animal
 Utilizes the Petfinder API. Coded in JavaScript and React Hooks and uses React Router, Bootstrap, and Semantic UI. 
 
 Collaborated on with [Jigar Swaminarayan](https://github.com/JigarSwam), [Nico Raymundo](https://github.com/nraymundo), and [Jennifer Siao](https://github.com/jennifer-s19)
+
+&nbsp;
+
+*Home Page*
+![PetMatch home Page](https://i.imgur.com/wpZq6zy.png)
+
+*Quiz*
+![PetMatch quiz](https://i.imgur.com/6ho7x8H.png)
+
+*Resources Page*
+![PetMatch resources page](https://i.imgur.com/F1GNCzl.png)
